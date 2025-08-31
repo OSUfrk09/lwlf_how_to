@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LWFL How‑To Guide</title>
+  <style>
+    :root{
+      --bg:#f7f8fb; --card:#ffffff; --ink:#1f2937; --muted:#6b7280; --brand:#4f46e5; --brand-2:#06b6d4; --good:#059669; --warn:#b45309; --bad:#dc2626; --ring: rgba(79,70,229,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";font-size:14px;scroll-behavior:smooth}
+    a{color:var(--brand);text-decoration:none}
+    .wrap{max-width:1000px;margin:40px auto;padding:0 20px}
+    .titlecard{background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;border-radius:20px;padding:36px;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+    .titlecard h1{margin:0 0 8px;font-size:40px}
+    .pill{display:inline-block;background:rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-weight:600;margin-right:8px}
+    .muted{color:#e5e7eb}
+
+    .pillnav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(247,248,251,.9);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid #e5e7eb;
+      padding: 10px 12px;
+      margin: 16px 0 8px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,.05);
+    }
+    .pillnav .pilllink {
+      display: inline-block;
+      background: rgba(79,70,229,.10);
+      color: var(--brand);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 13px;
+      margin: 6px 8px 6px 0;
+      transition: background .15s ease, box-shadow .15s ease;
+    }
+    .pillnav .pilllink:hover { background: rgba(79,70,229,.16); }
+    .pillnav .pilllink:focus { outline: none; box-shadow: 0 0 0 3px var(--ring); }
+
+    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+    .card h2,.card h3{margin-top:0}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+
+    .callout{border-left:5px solid var(--brand);padding:16px 16px 16px 14px;background:#f5f7ff;border-radius:10px}
+    .callout.warn{border-left-color:var(--warn);background:#fff7ed}
+    .badge{display:inline-block;background:#eef2ff;color:#3730a3;border-radius:999px;padding:4px 10px;font-weight:700;font-size:12px;margin:0 8px 8px 0}
+
+    .embed{position:relative;width:100%;border-radius:12px;overflow:hidden;background:#000;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+    .embed iframe{position:relative;display:block;width:100%;height:800px;min-height:480px;border:0}
+    @media (min-width:860px){ .embed iframe{aspect-ratio:1/1} }
+
+    section[id]{scroll-margin-top:90px}
+
+    @media print{
+      .pillnav { display: none; }
+      body{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .titlecard{page-break-inside:avoid;margin-bottom:24px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#fff;box-shadow:0 10px 30px rgba(0,0,0,.12)}
+      .card{page-break-inside:avoid;margin-bottom:20px;background:#fff;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+      .grid{page-break-inside:avoid}
+    }
+  </style>
+</head>
+<body onload="scrollTo(0, 0)">
+  <div class="wrap">
+    <section class="titlecard">
+      <h1>LWFL How‑To Guide</h1>
+      <p class="muted">Step‑by‑step visuals for common tasks. Embed your Scribe tutorials here.</p>
+    </section>
+
+    <nav class="pillnav">
+      <h2 >Table of contents</h2>
+      <a class="pilllink" href="#join-league">Join League</a>
+      <a class="pilllink" href="#rename-team">Rename Team</a>
+      <a class="pilllink" href="#auto-pick">Draft Queue</a>
+      <a class="pilllink" href="#set-lineup">Set Lineup</a>
+      <a class="pilllink" href="#add-player">Add Player / Waivers</a>
+    </nav>
+
+
+
+    <!-- SECTION: Join League -->
+    <section id="join-league" class="card" style="margin-top:20px">
+      <h2>How to Join Your Sleeper League</h2>
+      <div class="grid">
+        <div>
+          <p>Follow this step‑by‑step guide to join your fantasy league using a Sleeper invite link. Useful for first‑time users or switching between leagues.</p>
+          <p class="muted"><a href="https://scribehow.com/shared/Join_your_league__FSLuW7U_QtWxeRTmlOAN1g" target="_blank">Open in new tab</a></p>
+        </div>
+        <div>
+          <div class="embed">
+            <iframe src="https://scribehow.com/embed/Join_your_league__FSLuW7U_QtWxeRTmlOAN1g" allow="fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Rename Team -->
+    <section id="rename-team" class="card" style="margin-top:20px">
+      <h2>How to Rename Your Fantasy Team</h2>
+      <div class="grid">
+        <div>
+          <p>This tutorial shows how to rename your team within the Sleeper app or web dashboard—ideal for adding flavor or inside jokes to your squad.</p>
+          <p class="muted"><a href="https://scribehow.com/shared/How_to_Rename_Your_Sleeper_Fantasy_Football_Team__nBI6hqgPQh695hmeCe5J2Q" target="_blank">Open in new tab</a></p>
+        </div>
+        <div>
+          <div class="embed">
+            <iframe src="https://scribehow.com/embed/How_to_Rename_Your_Sleeper_Fantasy_Football_Team__nBI6hqgPQh695hmeCe5J2Q" allow="fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Auto‑Pick -->
+    <section id="auto-pick" class="card" style="margin-top:20px">
+      <h2>How to Auto‑Pick Players in Sleeper</h2>
+      <div class="grid">
+        <div>
+          <p>This walkthrough shows how to enable <strong>Auto‑Pick</strong> so Sleeper selects from your <em>Draft Queue</em> if you time out or can’t attend live.</p>
+          <div class="callout"><strong>Tip:</strong> Build a deep <em>Draft Queue</em> by tiers before draft time. Auto‑Pick follows your queue first, then your pre‑ranks.</div>
+          <p class="muted"><a href="https://scribehow.com/shared/How_to_Auto-Pick_Players_in_Sleeper_Fantasy_Football__OszKpvpKQUC1hJRHZe7Pew" target="_blank">Open in new tab</a></p>
+        </div>
+        <div>
+          <div class="embed">
+            <iframe src="https://scribehow.com/embed/How_to_Auto-Pick_Players_in_Sleeper_Fantasy_Football__OszKpvpKQUC1hJRHZe7Pew" allow="fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Set Lineup -->
+    <section id="set-lineup" class="card" style="margin-top:20px">
+      <h2>How to Set Your Weekly Lineup</h2>
+      <div class="grid">
+        <div>
+          <p>This walkthrough shows how to drag and drop players into your starting lineup before kickoff.</p>
+          <div class="callout"><strong>Tip:</strong> Be sure to keep an eye on injury statuses! Many players will be game time decisions. Check before each of your players games to make sure they are availble to play.</div>
+          <p class="muted"><a href="https://scribehow.com/shared/How_to_set_your_lineup__gVhAFEqETRqA_lPesSnw1w" target="_blank">Open in new tab</a></p>
+        </div>
+        <div>
+          <div class="embed">
+            <iframe src="https://scribehow.com/embed/How_to_set_your_lineup__gVhAFEqETRqA_lPesSnw1w" allow="fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: Add Player / Waivers -->
+    <section id="add-player" class="card" style="margin-top:20px">
+      <h2>How to Add a Player from Free Agency or Waivers</h2>
+      <div class="grid">
+        <div>
+          <p>This walkthrough explains how to find available players, submit waiver claims, or instantly add free agents depending on their waiver status.</p>
+          <p class="muted"><a href="https://scribehow.com/shared/How_to_add_a_player_from_free_agencywaivers__-JqjrFvURMW53HJdabuVwg" target="_blank">Open in new tab</a></p>
+        </div>
+        <div>
+          <div class="embed">
+            <iframe src="https://scribehow.com/embed/How_to_add_a_player_from_free_agencywaivers__-JqjrFvURMW53HJdabuVwg" allow="fullscreen"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div style="height:40px"></div>
+  </div>
+</body>
+</html>
